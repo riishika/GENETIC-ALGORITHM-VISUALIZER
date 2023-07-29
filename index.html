@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="stylesheet" href="css/app.min.css">
+  <script src="js/dark_mode.min.js"></script>
+  
+
+  <title>Genetic Algorithm | Rishika Kumar</title>
+  <meta property="og:title" content="Evolution Visualizer" />
+  <meta name="author" content="Rishika Kumar" />
+  <meta property="og:locale" content="en_US" />
+</head>
+
+<body>
+  <section class="writing-header">
+    <div class="header">
+      <nav>
+        <div class="menu-btn">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="menu">
+          <li><h1 class="head">MANIPAL UNIVERSITY JAIPUR</h1></li>
+          <li><h1>Soft Computing Project using GA</h1></li>
+          <li><h1>By: Rishika Kumar | 209302134 </h1></li>
+          <li class="switch"><span></span><input type="checkbox" id="switch" /><label for="switch">Toggle</label></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <section class="writing-body">
+    <div class="container">
+      <h1 class="headline">Visualize Evolution using Genetic Algorithm</h1>
+      <main>
+        <div class="container">
+          <div>
+            <form class="col-4">
+                <div>
+                    <label class="form-group">Target Word</label>
+                    <input type="text" class="form-control" id="target-word" value="Genetic Algorithm" placeholder="Enter Target Word">
+                </div>
+                <div>
+                    <label class="form-group">Mutation Rate</label>
+                    <input type="number" class="form-control" id="mutation-rate" step=0.001 min="0" max="1"  value="0.01">
+                </div>
+                <div>
+                    <label class="form-group">Population Size</label>
+                    <input type="number" id="population-size" class="form-control" value="800">
+                </div>
+                <div>
+                    <label class="form-group">Speed</label>
+                    <input type="range" id="speed" class="form-control" min="0" max="2000" value="2">
+                </div>
+            </form>
+            <div class="mt-3 buttons">
+              <button class="button" id="generate-word">Start</button>
+              <button class="button" id="stop">Stop</button>
+            </div>
+            <div class="col-2 mt-5">
+                <div>
+                    <div class="stats">
+                        <p id="best-word">
+                            Dummy Text
+                        </p>
+                        <hr>
+                        <p class="mt-3" id="stats">
+                        </p>
+                        <hr>
+                    </div>
+                </div>
+                <div>
+                    <div class="scroller" id="scroll-pane">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+  
+  <script src="js/production.min.js"></script>
+  <script src="js/dna.min.js"></script>
+  <script src="js/population.min.js"></script>
+  <script src="js/app.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</body>
+</html>
+
